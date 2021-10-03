@@ -2,3 +2,44 @@
 var, let, const
 let - variable values
 const - constant values
+
+3) Arrow functions
+
+normal function
+function myFunction(){
+    ...
+}
+
+arrow function 
+const myFunction = () => {
+    ...
+}
+
+example 
+const myName = (name) => {
+    console.log(name);
+}
+
+myName("Kishan")
+
+alternatives
+
+one argument
+const myName = name => {
+    console.log(name);
+}
+
+no arguments 
+const myName = () => {
+    console.log("Kishan")
+}
+#in above empty braces is mandatory
+
+if you have more than one argument you also need paranthesis
+conse myName = (name, age) = {
+    console.log(name, age)
+}
+
+lot of function just return something in this case
+single line return
+const multiply = number => number * 2;
