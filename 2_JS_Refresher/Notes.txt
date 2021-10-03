@@ -43,3 +43,31 @@ conse myName = (name, age) = {
 lot of function just return something in this case
 single line return
 const multiply = number => number * 2;
+
+4) Exports and Imports(Modules)
+
+Exports
+
+In Person.js
+const person = () => {
+    name: 'Max'
+}
+export default person
+
+In utility.js
+export const clean = () = {...}
+export const baseData = 10;
+
+app.js
+import person from './person.js' #here we can give any name in the default export
+import prs from './person.js' #here we can give any name in the defualt export
+
+import {baseData} from './utility.js' # here we have to give the same name in simple export with curly braces
+import {clean} from './utility.js' # here we have to give the same name in simple export with curly braces
+
+you can also use alias in the name export
+import {baseData as bd} from './utility.js'
+also you can export everything like this
+import * as bundled from './utility.js'
+bundled is an object you can use from bundled like this
+bundled.clean or bundled.baseData
