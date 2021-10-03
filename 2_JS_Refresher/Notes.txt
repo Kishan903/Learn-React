@@ -160,3 +160,26 @@ class Person extends Human {
 const newPerson = new Person();
 newPerson.printMyname();
 newPerson.printMyGender();
+
+7)Spread and Rest Operators
+Spread Operator
+# This is used to split up array elements or object properties
+const myArray = [1,2,3,4]
+const newArray = [...myArray, 5,6]
+const myObject = {"name": "Kishan"}
+const myNewObject = {...myObject, "age": 10}
+
+Rest Operator
+# Used to merge a list of fucntion arguments in a list
+function sortArgs(...args) {
+    return args.sort()
+}
+
+example
+Spread Operator
+const numbers = [1,2,3]
+const newNumber = [...numbers, 4]
+console.log(numbers);
+
+Rest Operator
+const filter = (...args) => {args.filter(el => el === 1)}
