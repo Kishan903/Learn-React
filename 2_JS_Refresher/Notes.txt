@@ -124,3 +124,39 @@ class Person extends Human{
 const newPerson = new Person();
 newPerson.printMyname();
 newPerson.printMyGender();
+
+6) Classes, Properties and Methods
+# in next generation javascript you don't have to use constructor to assign any value to anything
+for example in es6 you can assign any variable value like this
+class Person {
+    constructor(){
+        this.name = "Kishan"
+    }
+}
+# instead of this you can directly use this es7
+class Person {
+    name = "Kishan"
+}
+
+#also same is for fucntion/methods
+myFunction() {
+    ...
+}
+#instead of this you can directly use this es7
+myFunction = () => {...}
+
+example
+class Human {
+    gender = "Male"
+    myGender = () => {console.log(this.gender)}
+}
+class Person extends Human {
+    name = "Kishan"
+    myName = () => {
+        return console.log(this.name)
+    }
+}
+
+const newPerson = new Person();
+newPerson.printMyname();
+newPerson.printMyGender();
