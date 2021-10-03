@@ -1,0 +1,4 @@
+2) Let vs Const
+var, let, const
+let - variable values
+const - constant values
