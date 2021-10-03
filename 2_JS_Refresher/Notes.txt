@@ -183,3 +183,17 @@ console.log(numbers);
 
 Rest Operator
 const filter = (...args) => {args.filter(el => el === 1)}
+
+8) Destructuring
+array destructuring
+[a, b] = ["Hello", "Kishan"]
+
+object destructuring
+{name} = {"name": "Kishan", "age": 29}
+in here 
+console.log(name) # logs "Kishan"
+console.log(age) # undefined
+
+const number = [1,2,3];
+[num1, num2] = numbers;
+[num1, , num3] = numbers;
