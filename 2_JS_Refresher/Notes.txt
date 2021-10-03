@@ -197,3 +197,20 @@ console.log(age) # undefined
 const number = [1,2,3];
 [num1, num2] = numbers;
 [num1, , num3] = numbers;
+
+9) Reference or Primitive types
+const number = 1
+const number2 = numbers
+console.log(number2)
+# Primitive types: numbers, boolean, strings (real copy when you reassgn)
+# Objects and arrays are reference types
+const person = {
+    name = "Max"
+};
+const secondPerson = person;
+# pointer to person
+# so, if we change person value secondPerson value will also change and vice versa
+
+# now what to do when we want to create an copy
+# use speread Operator
+const secondPerson = {...person};
