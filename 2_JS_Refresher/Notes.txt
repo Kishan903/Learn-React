@@ -71,3 +71,56 @@ also you can export everything like this
 import * as bundled from './utility.js'
 bundled is an object you can use from bundled like this
 bundled.clean or bundled.baseData
+
+5) Understanding Classes
+class Person {
+    name = "Max" # properties
+    call = () => {...} # methods
+}
+
+const myPerson = new Person()
+myPerson.call()
+console.log(myPerson.name)
+
+inheritance
+class Person extends Master
+
+example
+class Person {
+    constructor() {
+        this.name = "Kishan"
+    }
+
+    printMyname() {
+        console.log(this.name)
+    }
+}
+
+const newPerson = new Person()
+newPerson.printMyname()
+
+example of extend
+class Human {
+    constructor() {
+        this.gender = "Male"
+    }
+
+    printGender() {
+        console.log(this.gender)
+    }
+}
+
+class Person extends Human{
+        constructor() {
+        super(); # to initialize the parent class constructor 
+        this.name = "Kishan"
+    }
+
+    printMyname() {
+        console.log(this.name)
+    }
+}
+
+const newPerson = new Person();
+newPerson.printMyname();
+newPerson.printMyGender();
